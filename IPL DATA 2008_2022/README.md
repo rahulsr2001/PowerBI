@@ -1,4 +1,6 @@
 ![IPL DASH](https://github.com/user-attachments/assets/fe81d408-dd8f-4d45-b472-c6a00e9aae57)
+![Screenshot 2025-01-13 111508](https://github.com/user-attachments/assets/0bc55a03-5161-42cc-b6ef-4706880ca63b)
+
 
 # IPL Analysis Dashboard (2008-2022)
 
