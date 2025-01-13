@@ -1,0 +1,54 @@
+    IPL DASH 
+
+Creating new table ; Table tools-> New table
+      - Calendar Table = CALENDAR(MIN(ipl_matches_2008_2022[match_date]),MAX(ipl_matches_2008_2022[match_date]))
+
+      - Year = YEAR('Calendar Table'[Date])
+
+in table view
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+1.DAX : ipl_matches_2008_2022 (dataset)
+
+Title Winner = VAR max_date=CALCULATE(MAX('Calendar Table'[Date]),ALLSELECTED(ipl_matches_2008_2022),VALUES(ipl_matches_2008_2022))     ----shift + enter----->
+
+var title_winner =CALCULATE(SELECTEDVALUE(ipl_matches_2008_2022[winning_team]),'Calendar Table'[Date]=max_date)     ---shift + enter---->
+
+return title_winner  ---enter---.
+
+
+2.DAX : ipl_matches_2008_2022 (dataset) for donut chart
+
+Matches Win on toss decision = CALCULATE(COUNTROWS(ipl_matches_2008_2022),ipl_matches_2008_2022[toss_winner]=ipl_matches_2008_2022[winning_team])
+
+----------------------------------------------------------------
+
+1.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Batter Runs = CONCATENATE(SUM(ipl_ball_by_ball_2008_2022[batsman_run]), " Runs")
+
+2.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Bowler Wickets = CONCATENATE(SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery])," Wickets")
+
+
+4.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Srtike Rate for Batsman = (SUM(ipl_ball_by_ball_2008_2022[batsman_run])/COUNT(ipl_ball_by_ball_2008_2022[ball_number]))*100
+
+
+5.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Economy = DIVIDE(
+               SUMX(
+                FILTER(ipl_ball_by_ball_2008_2022,ipl_ball_by_ball_2008_2022[extra_type]<>"legbyes" && ipl_ball_by_ball_2008_2022[extra_type]<>"byes"),ipl_ball_by_ball_2008_2022[total_run]),(COUNT(ipl_ball_by_ball_2008_2022[overs]))/6)
+
+
+6.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Average by Bowler = DIVIDE(
+               SUMX(
+                FILTER(ipl_ball_by_ball_2008_2022,ipl_ball_by_ball_2008_2022[extra_type]<>"legbyes" && ipl_ball_by_ball_2008_2022[extra_type]<>"byes"),ipl_ball_by_ball_2008_2022[total_run]),SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery]))
+
+7.DAX : ipl_ball_by_ball_2008_2022 (dataset)
+Bowling SR = COUNT(ipl_ball_by_ball_2008_2022[bowler])/SUM(ipl_ball_by_ball_2008_2022[iswicket_delivery])
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
