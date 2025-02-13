@@ -1,6 +1,6 @@
 # Dashboard Overview
 
-![Uploading Screenshot 2025-02-09 123604.png…]()
+![Image](https://github.com/user-attachments/assets/6ceb5133-3292-4c23-a518-bd17b1d23908)
 
 
 The dashboard focuses on analyzing Electric Vehicle (EV) sales data over time, across regions, and by various categories. It provides valuable insights for a company involved in the EV industry to understand sales trends and make informed business decisions.
