@@ -48,13 +48,13 @@ Shows the weekly trend of YTD sales.
 
 Helps identify peak sales periods and seasonal trends.
 
-#### B. YTD Total Sales by Body Style (Pie Chart)
+#### B. YTD Total Sales by Body Style (Donut Chart)
 
 Displays the percentage contribution of different car body styles (Sedan, SUV, Hatchback, etc.).
 
 Helps identify the most popular car types among customers.
 
-#### C. YTD Total Sales by Color (Pie Chart)
+#### C. YTD Total Sales by Color (Donut Chart)
 
 Visualizes the distribution of car sales by color.
 
