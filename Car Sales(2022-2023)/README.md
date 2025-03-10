@@ -3,7 +3,9 @@
 ## Objective:
 
 The Car Sales Dashboard is designed to provide a comprehensive and interactive analysis of car sales performance over time. It enables businesses to track key performance indicators (KPIs), identify sales trends, and make data-driven decisions.
+![Image](https://github.com/user-attachments/assets/9f74a52c-8f06-4d08-8efa-c9a8511ba6f4)
 
+![Image](https://github.com/user-attachments/assets/0c246d6b-5af1-4352-91df-82094b6c534b)
 ### 1. Key Features of the Dashboard
 
 #### A. Sales Overview (KPIs Section)
