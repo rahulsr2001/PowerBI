@@ -60,7 +60,7 @@ Visualizes the distribution of car sales by color.
 
 Helps understand customer preferences in car aesthetics.
 
-####D. YTD Cars Sold by Dealer Region (Map Chart)
+#### D. YTD Cars Sold by Dealer Region (Map Chart)
 
 Provides a geographic distribution of car sales.
 
